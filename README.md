@@ -1,7 +1,6 @@
 # 311-Chicago-Incidents
-Manage 311 Chicago Incidents .The whole concept and datasets are described [here](https://www.kaggle.com/chicago/chicago-311-service-requests) . You can create a new incident report,update an existing one provided you know the unique Report ID ,run default searches on the database, search all incidents regarding a specific Zip Code or Address . To do all the above you have to register first.
+Manage 311 Chicago Incidents .The whole concept and datasets are described [here](https://www.kaggle.com/chicago/chicago-311-service-requests) . You can create a new incident report,upvote a specific incident provided you know the unique Report ID and run default searches on the database.All the above can be done via POSTs and GETs through a REST API framework(e.g. Postman etc.)
 
 ## Setup
-* You have to use a `Postgres` Database . You need to create a schema named `311-Chicago-Incidents`
-* Change the file `application.properties` to match your postgres credentials
-* `Hibernate` will take care of creating the schema tables
+* You have to use a `MongoDB` Database . You need to create a database named `NoSQL-311CI`.
+* Change the file `application.properties` to match the Mongo database name.
